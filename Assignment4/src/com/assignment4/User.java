@@ -5,4 +5,5 @@ public class User {
   private String password;
   private String name;
   protected String role;
+  private String animal;
 }
