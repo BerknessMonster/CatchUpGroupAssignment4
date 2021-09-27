@@ -6,4 +6,5 @@ public class User {
   private String name;
   protected String role;
   private String animal;
+  private String color;
 }
