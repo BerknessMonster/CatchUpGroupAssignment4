@@ -3,7 +3,15 @@ package com.Assignment4;
 public class ApplicationRunnable {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		UserService userService = new UserService();
+		
+		//Array
+		Users[] users = new User[20];
+		
+		for (int i = 0; i < 20; i++) {
+			users[i] = userService.createUser("user" + (i+1), "password" + (i+1), )}
+		
+		
 
 	}
 
