@@ -19,8 +19,10 @@ public class ApplicationRunnable {
 		for (int i = 0; i < 20; i++) {
 			users[i] = userService.createUser("user" + (i+1), "password" + (i+1), )
 			static Scanner scanner = new Scanner(System.in);
-			System.out.println("To login enter your email");
+			System.out.println("To login enter your username");
+			String username = scanner.next();
 			System.out.println("Enter your password");
+			String password = scanner.next();
 			System.out.println("Welcome" + name);
 		}
 		System.out.println(users);
