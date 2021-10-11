@@ -73,6 +73,6 @@ public class ApplicationRunnable {
 		System.out.println("(4) Exit");
 		String option = scanner.nextLine();
 		
-		return Integer.parseInt(option);
+	
 	}
 }
