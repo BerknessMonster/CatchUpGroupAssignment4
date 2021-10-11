@@ -9,7 +9,9 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class ApplicationRunnable {
+	Static User [] users = new User[20];
 	UserService userService = new UserService();
+	static Scanner scanner = new Scanner(System.in);
 
 	public static void main(String[] args) {
 		
@@ -34,30 +36,43 @@ public class ApplicationRunnable {
 	
 	// once logged in
 
-	While(option)
+	public static int multipleUsernamesToUpdate() {
+		System.out.println("Which user would you like to login as? (Type in a valid username)");
+		String usernameToUpdate = scanner.nextLine();
+		return usernameToUpdate;
+	}
 
-	option 0
-	Log in
-	as another
-	user System.out.println("Which user would you like to log in as? (Type a valid username)");"Username not found, enter a valid username."
+	public static int multipleUpdateNames(User loggedInUser) {
+		System.out.println("Please type in your new name: ");
+		String name = scanner.nextLine();
+		loggedInUser.setName(name);
+	}
 
-	option 1
-	Update username
-	String updateUsername = scanner.nextLine();
+	
 
-	option 2
-	Update password
-	String updatePassword = scanner.nextLine();
-
-	option 3
-	Update name
-	String updateName = scanner.nextLine();
-
-	option 4
-	Exit String = scanner.nextLine();
-
-	if option 0
-
-	System.out.println("Which user would you like to login as? (Type in a valid username)"
-
+	public static int
+	multipleUpdateUsername(User loggedInUser) {
+		System.out.println("Please type in your new username: ");
+		String username = scanner.nextLine();
+		loggedInUser.setUsername(username);
+	}
+	public static int multipleUpdatePassword(User loggedInUser) {
+		System.out.println("Please type in your new password: ");
+		String password = scanner.nextLine();
+		loggedInUser.setPassword(password);
+	}
+	public static int multipleOptions(User loggedInUser) {
+		System.out.println("----------");
+		System.out.println("Please choose from the following options:");
+		if (loggedInUser instanceof SuperUser) {
+			System.out.println("(0) Log in as another user ");
+		}
+		System.out.println("(1) Update username");
+		System.out.println("(2) Update password");
+		System.out.println("(3) Update name");
+		System.out.println("(4) Exit");
+		String option = scanner.nextLine();
+		
+		return Integer.parseInt(option);
+	}
 }
