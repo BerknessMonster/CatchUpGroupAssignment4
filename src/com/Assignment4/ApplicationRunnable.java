@@ -62,7 +62,7 @@ public class ApplicationRunnable {
 		loggedInUser.setPassword(password);
 	}
 	public static int multipleOptions(User loggedInUser) {
-		System.out.println("----------");
+		System.out.println("_______________________________");
 		System.out.println("Please choose from the following options:");
 		if (loggedInUser instanceof SuperUser) {
 			System.out.println("(0) Log in as another user ");
