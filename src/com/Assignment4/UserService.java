@@ -1,4 +1,4 @@
-package com.Assignment4;
+package com.Assignment4; //methods :)
 
 public class UserService {
 	public User getValidUser(String username, String password) {
